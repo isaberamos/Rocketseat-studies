@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Maior numero</title>
+
+    <h1>Qual é o maior numero?</h1>
+    Primeiro: <input id="primeiro" type="number">
+    Segundo: <input id="segundo" type="number">
+    Terceiro: <input id="terceiro" type="number">
+    <button onclick="maior()">Maior</button>
+
+    <script type="text/javascript">
+        function maior() {
+            var primeiroNum = parseFloat(document.getElementById('primeiro').value);
+            var segundoNum = parseFloat(document.getElementById('segundo').value);
+            var terceiroNum = parseFloat(document.getElementById('terceiro').value);
+            
+            var maior = primeiroNum;
+
+            if (segundoNum > maior) 
+                maior = segundoNum; 
+            
+            if (terceiroNum > maior) 
+                maior = terceiroNum;
+            
+            alert('O maior número é ' + maior);
+            }
+    </script>
+</head>
+</html>

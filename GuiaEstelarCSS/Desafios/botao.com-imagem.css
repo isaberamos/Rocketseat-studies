@@ -1,0 +1,11 @@
+.botao {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    line-height: 0;
+}
+
+button img {
+    width: 2rem;
+    height: 2rem;
+}
