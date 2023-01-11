@@ -1,0 +1,12 @@
+{
+    "nome" : "Isabella",
+    "cidade" : "Itajai",
+    "telefone" : 47986521145,
+    "livros_favoritos" : ["o manifesto comunista", 
+    "genero e saude mental: processos de subjetivação", 
+    "o que fazer"],
+    "hobbies" : {
+        "semana" : "estudar programação",
+        "final_de_semana" : "bikeclimb"
+    }
+}
