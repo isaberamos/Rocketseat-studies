@@ -24,3 +24,14 @@ Atualiza/faz update de registros
 
 ## PATCH
 Só aceita atualizações em um único registro
+
+
+# Como inicializar um projeto em NodeJS
+
+* npm init -y 
+* npm i express
+* cria o server
+    * const express = require('express')
+    * const app = express()
+    * app.listen('3000')
+    * roda o index.js
