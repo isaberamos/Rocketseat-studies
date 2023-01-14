@@ -28,9 +28,9 @@ Só aceita atualizações em um único registro
 
 # Como inicializar um projeto em NodeJS
 
-* npm init -y 
-* npm i express
-* cria o server
+1. npm init -y 
+2. npm i express
+3. cria o server:
     * const express = require('express')
     * const app = express()
     * app.listen('3000')
