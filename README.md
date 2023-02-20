@@ -1,1 +1,1 @@
-# 👾 Estudos realizados através do curso fornecido pela escola Rocketseat
+# 👾 Estudos realizados através do curso fornecido pela escola de programação Rocketseat
