@@ -1,0 +1,46 @@
+<!--
+CSS Animations é uma ferramenta do CSS que permite criar animações sem a interação do usuário, onde elas podem acontecer de forma autônoma.
+
+CSS animation-name - é o nome da animação criada com @keyframes
+
+CSS animation-duration - é o tempo de duração da animação em uma escala de segundos
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <title>Document</title>
+
+    <style>
+        .ball {
+            width: 100px;
+            height: 100px;
+            border-radius: 100px;
+            background-color: yellow;
+            position: relative;
+            
+            animation-name: example-one;
+            animation-duration: 4s;
+        }
+
+        @keyframes example-one {
+            from{
+                background-color: blueviolet;
+    
+            }
+            to {
+                background-color: rosybrown
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <div class="ball"></div>
+</body>
+
+</html>

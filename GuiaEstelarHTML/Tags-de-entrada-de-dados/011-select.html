@@ -1,0 +1,35 @@
+<!--
+    <select>
+    
+    - Controle que fornece um menu de opções
+
+    <option>
+
+    - Contém as opções a serem selecionadas
+    - Value é o atributo necessário porque vai ser enviado pro name do select, que por sua vez levará ao backend
+
+    # Atributos únicos
+    - multiple
+        - múltiplas opções
+    - size
+        - quantas opções visíveis?
+    
+-->
+
+<label for="carselect">Qual modelo do carro?</label>
+<select name="carmodel" id="carselect">
+    <option value="">Selecione o modelo</option>
+    <option value="fiat">Uno</option>
+    <option value="audi">A3</option>
+</select>
+<!-- carmodel=fiat-->
+
+<br>
+
+<label for="carselect">Qual modelo do carro?</label>
+<select name="carmodel" id="carselect" multiple size="2">
+    <option value="fiat">Uno</option>
+    <option value="audi">A3</option>
+    <option value="bmw">X6</option>
+</select>
+<!-- carmodel=fiat-->

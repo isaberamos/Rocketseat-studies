@@ -1,0 +1,29 @@
+<!--
+    <input type="search">
+
+    - Para campos de busca
+    - É igual ao campo do tipo 'text', mas poderá ser um pouco diferente dependendo do user agent
+
+    # Atributos
+
+    - list / <datalist/>
+    - pattern (espera uma expressão regular, ou seja, faz uma busca por semelhança, exemplo se usar [0-9]{2} o user terá que digitar 9 números e repetir dois números)
+    - aria-label para o leitor de busca (mais acessibilidade)
+-->
+
+<datalist id="searchterms">
+    <option value="">Mac</option>
+    <option value="">Windows</option>
+    <option value="">Linux</option>
+</datalist>
+
+<form action="">
+    <label for="">Pesquisar pelo ID</label>
+    <input type="search" name="w" list="searchterms"
+    placeholder="Digite seu termo de busca" size="20"
+    aria-label="Campo de pesquisa"
+    >
+    <button>Pesquisar</button>
+</form>
+
+<!-- no backend: w=searchterms-->

@@ -1,0 +1,47 @@
+<!--
+Animation fill mode
+
+Fixa o objeto no "final" da tela
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>CSS Animation</title>
+
+    <style>
+        .ball{
+            width: 100px;
+            height: 100px;
+            background-color: blueviolet;
+            position: relative;
+            border-radius: 100px;
+
+            animation-name: example;
+            animation-duration: 2s;
+            animation-delay: 2s;
+
+            /*animation-fill-mode: forwards;*/
+            /*animation-fill-mode: backwards;  encerra quando a animação começa */
+            animation-fill-mode: both;
+        }
+
+        @keyframes example {
+            from {
+                left: 0;
+                background-color: cyan;
+            }
+            to {
+                left: calc(100% - 100px);
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="ball">Ball</div>
+</body>
+
+</html>

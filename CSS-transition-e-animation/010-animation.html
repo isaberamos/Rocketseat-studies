@@ -1,0 +1,70 @@
+<!--
+Animation timing function
+
+ease - Início lento, rápido e final lento (este é o padrão)
+linear - Mesma velocidade do início ao fim
+easy-in - Início lento
+easy-out - Final lento
+easy-in-out - Início e fim lentos
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS Animation</title>
+
+    <style>
+        div {
+            width: 100px;
+            height: 50px;
+            background-color: blueviolet;
+            color: wheat;
+            position: relative;
+
+            animation-name: example;
+            animation-duration: 2s;
+        }
+
+        .linear {
+            animation-timing-function: linear;
+
+        }
+
+        .ease {
+            animation-timing-function: ease;
+
+        }
+
+        .ease-in {
+            animation-timing-function: ease-in;
+
+        }
+
+        .ease-out {
+            animation-timing-function: ease-out;
+
+        }
+
+        .ease-in-out {
+            animation-timing-function: ease-in-out;
+
+        }
+
+        @keyframes example {
+            from {
+                left: 0px
+            }
+            to {
+                left: calc(100% - 100px)
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="linear">Linear</div>
+    <div class="ease">Ease</div>
+    <div class="ease-in">Ease-in</div>
+    <div class="ease-out">Ease-out</div>
+    <div class="ease-in-out">Ease-in-out</div>
+</body>
+</html>
